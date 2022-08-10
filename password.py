@@ -27,6 +27,19 @@ def setup():
         case '+':
             for symbols in 'il1Lo0O':
                 chars += chars.replace(symbols, '')
+    print(generate(length, chars))
+
+
+def generate(length, chars):
+    new_password = ''
+    for _ in range(length):
+        new_password += choice(chars)
+    return console.print(Panel(f'Your password is [blue]{new_password}[/blue]',
+    title='[blue]Password generator'), justify='center')
+
+
+# def result():
+#     pass
 
 
 def generate():
