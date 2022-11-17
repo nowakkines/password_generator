@@ -8,7 +8,7 @@ Can you guess the number using binary search?
 
 # How it looks like
 
-<img src="https://raw.githubusercontent.com/ap7kj/password_generator/main/password_generator/img/cover.jpg" alt="Password Generator>
+<img src="https://raw.githubusercontent.com/ap7kj/password_generator/main/password_generator/img/cover.jpg" alt="Password Generator">
 
 
 ## Requirements
