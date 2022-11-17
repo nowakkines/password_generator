@@ -5,7 +5,6 @@ from rich import print
 from rich.panel import Panel
 from rich.progress import track
 from time import sleep
-# COUNTER = 0
 console = Console()
 chars = ''
 
@@ -21,8 +20,6 @@ def app():
 def characteristis():
     console.print(Panel('[blue]How long is the password you want?[/blue]'))
     length = int(input(' enter: '))
-    # console.print(Panel('[blue]How many passwords do you need to generate?[/blue]'))
-    # how = int(input(' enter: '))
     setup(chars, length)
 
 
@@ -51,21 +48,10 @@ def generate(chars, length):
     new_password = ''
     for _ in range(length):
         new_password += choice(chars)
+    for _ in track(range(50), description='[blue]Processing...'):
+        sleep(0.03)
     console.print(Panel(f'Your password is [blue]{new_password}[/blue]',
 title='[blue]Password generator'))
-
-
-# for _ in range(how):
-#     generate(chars, length, how)
-#     COUNTER += 1
-#     for _ in track(range(50), description='[blue]Processing...'):
-#         sleep(0.03)
-#         console.print(Panel(f'Your [red]{COUNTER}[/red] password is [blue]{new_password}[/blue]',
-# title='[blue]Password generator'))
-#     print('-- [red]Would you like to repeat it?[/red] -- ')
-#     match input('here: '):
-#         case '+':
-#             app()
 
 
 if __name__ == '__main__':
