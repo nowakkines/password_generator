@@ -1,26 +1,18 @@
-<h1>
-Генератор безопасных паролей.
- </h1>
- 
-Описание проекта: программа генерирует заданное количество паролей и включает в себя умную настройку на длину пароля, а также на то, какие символы требуется в него включить, а какие исключить.
+# Console app 'Password generator'
+![GitHub last commit](https://img.shields.io/github/last-commit/ap7kj/password_generator)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ap7kj/password_generator)
+
+Can you guess the number using binary search?
+
+<p1>Project description: the program generates a set number of passwords and includes a smart setting for the length of the password, as well as which characters need to be included in it and which ones to exclude.</p1>
+
+# How it looks like
+
+<img src="https://raw.githubusercontent.com/ap7kj/password_generator/main/password_generator/img/cover.jpg" alt="Password Generator>
 
 
+## Requirements
 
-Составляющие проекта:
+Python 3.6+
 
-- Целые числа (тип int);
-- Переменные;
-- Ввод / вывод данных (функции input() и print());
-- Условный оператор (if/elif/else);
-- Цикл for;
-- Написание пользовательских функций;
-- Работа с модулем random для генерации случайных чисел.
-</h1>
-<div id="header" align="center">
-  <img src='https://media4.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif?cid=ecf05e474zlbi6s3k0zz7ac6ygvu47nc1606qv4zea5kpt8r&rid=giphy.gif&ct=g' width="450"/>
-</div>
-
-
-<div id="header" align="center">
-"Поколение Python": курс для начинающих
-</div> 
+pip install -r requirements.txt
